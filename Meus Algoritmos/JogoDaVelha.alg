@@ -11,13 +11,18 @@ vencedor: caractere
 procedimento drawTab()
 inicio
 
-escreval("+---+---+---+")
-escreval("|  ",a[1,1],"|  ",a[1,2],"|  ",a[1,3],"|")
-escreval("+---+---+---+")
-escreval("|  ",a[2,1],"|  ",a[2,2],"|  ",a[2,3],"|")
-escreval("+---+---+---+")
-escreval("|  ",a[3,1],"|  ",a[3,2],"|  ",a[3,3],"|")
-escreval("+---+---+---+")
+escreval("=================")
+escreval("# JOGO DA VELHA #")
+escreval("=================")
+escreval("")
+
+escreval("  ",a[1,1]," | ",a[1,2]," | ",a[1,3])
+escreval(" ---+---+---")
+escreval("  ",a[2,1]," | ",a[2,2]," | ",a[2,3])
+escreval(" ---+---+---")
+escreval("  ",a[3,1]," | ",a[3,2]," | ",a[3,3])
+
+escreval("")
 
 fimprocedimento
 
@@ -230,7 +235,7 @@ enquanto (fim <> 1) faca
    drawTab()
 
    escreval("Jogador 1")
-   escreva("Em qual casa você quer marcar o X? ")
+   escreva("Em qual casa vocÃª quer marcar o X? ")
    leia(X)
    opcaoA(X)
 
@@ -244,7 +249,7 @@ enquanto (fim <> 1) faca
       drawTab()
 
       escreval("Jogador 2")
-      escreva("Em qual casa você quer marcar o O? ")
+      escreva("Em qual casa vocÃª quer marcar o O? ")
       leia(O)
       opcaoB(O)
       VitoriaDoO()
